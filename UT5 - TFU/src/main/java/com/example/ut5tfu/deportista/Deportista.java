@@ -6,14 +6,16 @@ public class Deportista implements Usuario {
 	private String id;
 	private String nombre;
 	private String apellido;
+	private String correo;
 	private String contraseña;
 	private String rol;
 
-	public Deportista(String id, String nombre, String apellido, String contraseña, String rol) {
+	public Deportista(String id, String nombre, String apellido, String correo, String contraseña, String rol) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.correo = correo;
 		this.contraseña = contraseña;
 		this.rol = rol;
 	}
@@ -43,6 +45,15 @@ public class Deportista implements Usuario {
 
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+
+	@Override
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
 	}
 
 	@Override

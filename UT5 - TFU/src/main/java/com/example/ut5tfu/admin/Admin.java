@@ -7,14 +7,16 @@ public class Admin implements Usuario {
 	private String id;
 	private String nombre;
 	private String apellido;
+	private String correo;
 	private String contraseña;
 	private String rol;
 
-	public Admin(String id, String nombre, String apellido, String contraseña, String rol) {
+	public Admin(String id, String nombre, String apellido, String correo, String contraseña, String rol) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.correo = correo;
 		this.contraseña = contraseña;
 		this.rol = rol;
 	}
@@ -47,6 +49,15 @@ public class Admin implements Usuario {
 	}
 
 	@Override
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+
+	@Override
 	public String getContraseña() {
 		return contraseña;
 	}
@@ -63,6 +74,5 @@ public class Admin implements Usuario {
 	public void setRol(String rol) {
 		this.rol = rol;
 	}
-
 
 }

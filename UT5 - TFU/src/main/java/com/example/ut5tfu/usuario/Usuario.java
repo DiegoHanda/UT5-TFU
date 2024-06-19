@@ -10,6 +10,9 @@ public interface Usuario {
 	String getApellido();
 	void setApellido(String apellido);
 
+	String getCorreo();
+	void setCorreo(String correo);
+
 	String getContraseña();
 	void setContraseña(String contraseña);
 
