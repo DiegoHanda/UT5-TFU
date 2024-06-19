@@ -1,4 +1,4 @@
-package com.example.ut5tfu.usuario;
+package com.example.ut5tfu.utils;
 
 public interface IUsuario {
 

@@ -1,4 +1,4 @@
-package com.example.ut5tfu.mediator;
+package com.example.ut5tfu.utils;
 
 public class ConcreteMediator implements IMediator {
 	private static ConcreteMediator cM;
