@@ -1,10 +1,17 @@
 package com.example.ut5tfu.mediator;
 
 public class ConcreteMediator implements IMediator {
+	private static ConcreteMediator cM;
 
 	@Override
 	public void agregarPuntuacion(Integer idEncuentro, Integer idDeportista, Integer puntuacion) {
-		// TODO Auto-generated method stub
 
+	}
+
+	public static synchronized ConcreteMediator getInstance() {
+		if (cM == null) {
+			cM = new ConcreteMediator();
+		}
+		return cM;
 	}
 }
