@@ -1,22 +1,22 @@
 package com.example.ut5tfu.deportista;
 
-import com.example.ut5tfu.usuario.Usuario;
+import com.example.ut5tfu.usuario.IUsuario;
 
-public class Deportista implements Usuario {
+public class Deportista implements IUsuario {
 	private String id;
 	private String nombre;
 	private String apellido;
 	private String correo;
-	private String contraseña;
+	private String contrasena;
 	private String rol;
 
-	public Deportista(String id, String nombre, String apellido, String correo, String contraseña, String rol) {
+	public Deportista(String id, String nombre, String apellido, String correo, String contrasena, String rol) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.correo = correo;
-		this.contraseña = contraseña;
+		this.contrasena = contrasena;
 		this.rol = rol;
 	}
 
@@ -57,12 +57,12 @@ public class Deportista implements Usuario {
 	}
 
 	@Override
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
 
 	@Override

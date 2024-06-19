@@ -1,23 +1,29 @@
 package com.example.ut5tfu.juez;
 
-import com.example.ut5tfu.usuario.Usuario;
+import com.example.ut5tfu.mediator.IMediator;
+import com.example.ut5tfu.usuario.IUsuario;
 
-public class Juez implements Usuario {
+public class Juez implements IUsuario {
 	private String id;
 	private String nombre;
 	private String apellido;
 	private String correo;
-	private String contraseña;
+	private String contrasena;
 	private String rol;
+	private IMediator mediator;
 
-	public Juez(String id, String nombre, String apellido, String correo, String contraseña, String rol) {
-		super();
+	public Juez(IMediator mediator) {
+		this.mediator = mediator;
+	}
+
+	public Juez(String id, String nombre, String apellido, String correo, String contrasena, String rol, IMediator mediator) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.correo = correo;
-		this.contraseña = contraseña;
+		this.contrasena = contrasena;
 		this.rol = rol;
+		this.mediator = mediator;
 	}
 
 	@Override
@@ -57,12 +63,12 @@ public class Juez implements Usuario {
 	}
 
 	@Override
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
 
 	@Override
