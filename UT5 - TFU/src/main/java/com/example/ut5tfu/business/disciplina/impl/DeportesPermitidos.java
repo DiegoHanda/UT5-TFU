@@ -1,4 +1,4 @@
-package com.example.ut5tfu.business.encuentro.impl;
+package com.example.ut5tfu.business.disciplina.impl;
 
 public enum DeportesPermitidos {
     ATLETISMO,

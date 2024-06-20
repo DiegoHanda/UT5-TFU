@@ -1,23 +1,54 @@
 package com.example.ut5tfu.model;
 
-import com.example.ut5tfu.business.encuentro.impl.DeportesPermitidos;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.ut5tfu.business.disciplina.impl.DeportesPermitidos;
 
 public class Disciplina {
-    public List<Deportista> deportistas;
-    public String nombre;
-    //Constructor sabiendo de antemano la lista de participantes
-    public Disciplina(List<Deportista> deportistas, DeportesPermitidos nombre) {
-        this.deportistas = deportistas;
+    private String nombre;
+    private String[] categorias;
+    private String[] modalidades;
+    private  Integer id;
+
+    public Disciplina(Integer id, DeportesPermitidos nombre) {
+        this.id = id;
         this.nombre = nombre.toString();
     }
-    //Este caso es por si no se sabe los participantes de antemano que inicialice la lista
-    public Disciplina(DeportesPermitidos nombre) {
+
+    public Disciplina(Integer id, DeportesPermitidos nombre, String[] categorias, String[] modalidades) {
+        this.id = id;
         this.nombre = nombre.toString();
-        this.deportistas = new ArrayList<Deportista>();
+        this.categorias = categorias;
+        this.modalidades = modalidades;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String[] getCategorias() {
+        return categorias;
+    }
+
+    public void setCategorias(String[] categorias) {
+        this.categorias = categorias;
+    }
+
+    public String[] getModalidades() {
+        return modalidades;
+    }
+
+    public void setModalidades(String[] modalidades) {
+        this.modalidades = modalidades;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }
