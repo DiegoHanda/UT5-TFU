@@ -1,4 +1,4 @@
-package com.example.ut5tfu.web;
+package com.example.ut5tfu.controller;
 
 import org.springframework.web.bind.annotation.*;
 import com.example.ut5tfu.service.ItinerarioService;

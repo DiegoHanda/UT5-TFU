@@ -1,4 +1,4 @@
-package com.example.ut5tfu.web;
+package com.example.ut5tfu.controller;
 
 import com.example.ut5tfu.service.implementation.PuntajeServiceImpl;
 import com.example.ut5tfu.model.Encuentro;
