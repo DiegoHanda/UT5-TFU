@@ -2,6 +2,11 @@ package com.example.ut5tfu.repository;
 
 import java.util.*;
 
+/**
+ * Repository para simular la persistencia de datos.
+ * @param <T> Tipo de clase o entidad que maneja este repository.
+ * @param <I> Tipo de dato del identificacdor de la clase manejada.
+ */
 public abstract class Repository<T, I> {
 
     Map<I, T> entities = new HashMap<>();
