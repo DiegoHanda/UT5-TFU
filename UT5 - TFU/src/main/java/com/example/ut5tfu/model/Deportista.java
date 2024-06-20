@@ -9,6 +9,7 @@ public class Deportista implements IUsuario {
 	private String correo;
 	private String contrasena;
 	private String rol;
+	private Estadistica estadistica;
 
 	public Deportista(String id, String nombre, String apellido, String correo, String contrasena, String rol) {
 		super();

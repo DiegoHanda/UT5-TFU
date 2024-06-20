@@ -2,6 +2,7 @@ package com.example.ut5tfu.model;
 
 import com.example.ut5tfu.utils.IMediator;
 import com.example.ut5tfu.utils.IUsuario;
+import com.example.ut5tfu.utils.ConcreteMediator;
 
 public class Juez implements IUsuario {
 	private String id;
@@ -10,20 +11,19 @@ public class Juez implements IUsuario {
 	private String correo;
 	private String contrasena;
 	private String rol;
-	private IMediator mediator;
+	private ConcreteMediator mediator;
 
-	public Juez(IMediator mediator) {
-		this.mediator = mediator;
+	public Juez() {
 	}
 
-	public Juez(String id, String nombre, String apellido, String correo, String contrasena, String rol, IMediator mediator) {
+	public Juez(String id, String nombre, String apellido, String correo, String contrasena, String rol) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.correo = correo;
 		this.contrasena = contrasena;
 		this.rol = rol;
-		this.mediator = mediator;
+		this.mediator = ConcreteMediator.getInstance();
 	}
 
 	@Override

@@ -21,5 +21,4 @@ public class EncuentroRepository extends Repository<Encuentro, Integer> {
         this.entities.put(clase.getId(), clase);
         return super.save(clase);
     }
-
 }
