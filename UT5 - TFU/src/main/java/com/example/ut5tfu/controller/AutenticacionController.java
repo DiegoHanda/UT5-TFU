@@ -1,5 +1,6 @@
 package com.example.ut5tfu.controller;
 
+import com.example.ut5tfu.model.interfaces.IUsuario;
 import com.example.ut5tfu.service.autenticacion.AutenticacionService;
 import com.example.ut5tfu.service.autenticacion.dto.LoginDTO;
 import com.example.ut5tfu.service.autenticacion.dto.RegisterDTO;
@@ -16,14 +17,13 @@ public class AutenticacionController {
     }
 
     @PostMapping("/login")
-    public void login(@RequestBody LoginDTO loginDTO) {
-        this.autenticacionService.login(loginDTO);
+    public IUsuario login(@RequestBody LoginDTO loginDTO) {
+        return this.autenticacionService.login(loginDTO);
     }
 
     @PostMapping("/register")
-    public void register(@RequestBody RegisterDTO registerDTO) {
-        this.autenticacionService.register(registerDTO);
+    public IUsuario register(@RequestBody RegisterDTO registerDTO) {
+        return this.autenticacionService.register(registerDTO);
     }
-
 
 }
