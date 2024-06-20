@@ -1,6 +1,7 @@
 package com.example.ut5tfu.repository;
 
 import com.example.ut5tfu.model.Encuentro;
+import com.example.ut5tfu.model.Itinerario;
 
 public class EncuentroRepository extends Repository<Encuentro, Integer> {
 
@@ -21,5 +22,4 @@ public class EncuentroRepository extends Repository<Encuentro, Integer> {
         this.entities.put(clase.getId(), clase);
         return super.save(clase);
     }
-
 }

@@ -2,9 +2,11 @@ package com.example.ut5tfu.utils;
 
 import com.example.ut5tfu.model.Deportista;
 import com.example.ut5tfu.model.Encuentro;
-import com.example.ut5tfu.repository.JuezRepository;
+
+import java.util.HashMap;
 
 public interface IMediator {
 
-	void ingresarPuntuacion(JuezRepository juezRepository, Encuentro encuentro, Deportista deportista, int puntuacion);
+    public void agregarPuntuacion(HashMap<String, Integer> caracteristicas, Encuentro encuentro, Deportista deportista);
+    void notifyAll(String event);
 }
