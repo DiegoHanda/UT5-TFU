@@ -2,8 +2,10 @@ package com.example.ut5tfu.utils;
 
 import com.example.ut5tfu.model.Deportista;
 import com.example.ut5tfu.model.Encuentro;
+import com.example.ut5tfu.repository.JuezRepository;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class ConcreteMediator implements IMediator {
 
@@ -20,14 +22,7 @@ public class ConcreteMediator implements IMediator {
 
 	@Override
 	public void agregarPuntuacion(HashMap<String, Integer> caracteristicas, Encuentro encuentro, Deportista deportista) {
-		if (encuentros.containsKey(encuentro.getId())){
-			encuentros.put(encuentro.getId(), 1);
-			if (encuentro.getJueces().size() == this.encuentros.get(encuentro.getId())) {
-				System.out.println("Todos los jueces ya han clasificado.");
-				this.puntajeFactory.createPuntaje(encuentro.getTipo(), caracteristicas, deportista);
-			}
-		}else if(encuentros.containsKey(encuentro.getId())) {
-
+		if(encuentros.containsKey(encuentro.getId())) {
 			if (encuentro.getJueces().size() == this.encuentros.get(encuentro.getId())) {
 				System.out.println("Todos los jueces ya han clasificado.");
 				this.puntajeFactory.createPuntaje(encuentro.getTipo(), caracteristicas, deportista);
