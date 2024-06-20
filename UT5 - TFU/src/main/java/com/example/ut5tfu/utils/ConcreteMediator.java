@@ -41,7 +41,7 @@ public class ConcreteMediator implements IMediator {
 		}
 		return cM;
 	}
-	
+
     private ConcreteMediator(PuntajeFactory puntajeFactory) {
         this.puntajeFactory = puntajeFactory;
     }
