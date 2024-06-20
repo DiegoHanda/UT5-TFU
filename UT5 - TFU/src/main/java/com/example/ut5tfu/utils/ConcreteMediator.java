@@ -41,16 +41,7 @@ public class ConcreteMediator implements IMediator {
 		}
 		return cM;
 	}
-
-	@Override
-	public void ingresarPuntuacion(JuezRepository juezRepository, Encuentro encuentro, Deportista deportista, int puntuacion) {
-		List<Integer> puntajes = encuentro.getPuntajes();
-		puntajes.add(puntuacion);
-		juezRepository.save(encuentro);
-	}
-
-
-
+	
     private ConcreteMediator(PuntajeFactory puntajeFactory) {
         this.puntajeFactory = puntajeFactory;
     }
