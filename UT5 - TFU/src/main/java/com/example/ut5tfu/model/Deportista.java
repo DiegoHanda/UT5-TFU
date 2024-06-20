@@ -1,16 +1,16 @@
 package com.example.ut5tfu.model;
 
-import com.example.ut5tfu.utils.IUsuario;
+import com.example.ut5tfu.model.interfaces.IUsuario;
 
 public class Deportista implements IUsuario {
-	private String id;
+	private Integer id;
 	private String nombre;
 	private String apellido;
 	private String correo;
 	private String contrasena;
 	private String rol;
 
-	public Deportista(String id, String nombre, String apellido, String correo, String contrasena, String rol) {
+	public Deportista(Integer id, String nombre, String apellido, String correo, String contrasena, String rol) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -21,13 +21,14 @@ public class Deportista implements IUsuario {
 	}
 
 	@Override
-	public String getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
+
 
 	@Override
 	public String getNombre() {

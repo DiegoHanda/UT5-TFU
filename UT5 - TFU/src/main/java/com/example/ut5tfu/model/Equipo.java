@@ -1,6 +1,6 @@
 package com.example.ut5tfu.model;
 
-import com.example.ut5tfu.utils.Pais;
+import com.example.ut5tfu.persistence.Pais;
 
 import java.util.List;
 

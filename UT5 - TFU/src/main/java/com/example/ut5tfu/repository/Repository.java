@@ -1,4 +1,4 @@
-package com.example.ut5tfu.persistence;
+package com.example.ut5tfu.repository;
 
 import java.util.*;
 

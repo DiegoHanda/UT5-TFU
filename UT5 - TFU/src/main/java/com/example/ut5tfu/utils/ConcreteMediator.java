@@ -1,7 +1,7 @@
 package com.example.ut5tfu.utils;
 
 public class ConcreteMediator implements IMediator {
-	private static ConcreteMediator cM;
+	private static ConcreteMediator instance;
 
 	@Override
 	public void agregarPuntuacion(Integer idEncuentro, Integer idDeportista, Integer puntuacion) {
@@ -9,9 +9,9 @@ public class ConcreteMediator implements IMediator {
 	}
 
 	public static synchronized ConcreteMediator getInstance() {
-		if (cM == null) {
-			cM = new ConcreteMediator();
+		if (instance == null) {
+			instance = new ConcreteMediator();
 		}
-		return cM;
+		return instance;
 	}
 }

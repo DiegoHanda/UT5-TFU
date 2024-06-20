@@ -1,6 +1,6 @@
-package com.example.ut5tfu.web;
+package com.example.ut5tfu.controller;
 
-import com.example.ut5tfu.business.encuentro.EncuentroService;
+import com.example.ut5tfu.service.EncuentroService;
 import com.example.ut5tfu.model.Encuentro;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,7 +38,7 @@ public class EncuentroController {
     }
 
     @DeleteMapping("/{id}")
-    public void crear(@PathVariable int id) {
+    public void eliminarEncuentro(@PathVariable int id) {
         this.encuentroService.eliminarEncuentro(id);
 }
 

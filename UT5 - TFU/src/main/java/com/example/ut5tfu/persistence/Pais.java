@@ -1,4 +1,4 @@
-package com.example.ut5tfu.utils;
+package com.example.ut5tfu.persistence;
 
 public enum Pais {
     AFGANISTAN,

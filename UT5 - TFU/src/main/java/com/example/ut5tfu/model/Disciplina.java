@@ -1,6 +1,6 @@
 package com.example.ut5tfu.model;
 
-import com.example.ut5tfu.business.encuentro.impl.DeportesPermitidos;
+import com.example.ut5tfu.persistence.DeportesPermitidos;
 
 import java.util.ArrayList;
 import java.util.List;

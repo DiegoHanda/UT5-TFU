@@ -1,8 +1,8 @@
-package com.example.ut5tfu.business.encuentro.impl;
+package com.example.ut5tfu.service.implementation;
 
-import com.example.ut5tfu.business.encuentro.EncuentroService;
+import com.example.ut5tfu.service.EncuentroService;
 import com.example.ut5tfu.model.Encuentro;
-import com.example.ut5tfu.persistence.EncuentroRepository;
+import com.example.ut5tfu.repository.EncuentroRepository;
 import com.example.ut5tfu.web.exception.NotFoundException;
 import org.springframework.stereotype.Service;
 

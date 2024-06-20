@@ -1,36 +1,36 @@
 package com.example.ut5tfu.model;
 
-import com.example.ut5tfu.utils.IUsuario;
+import com.example.ut5tfu.model.interfaces.IUsuario;
 
 public class Aficionado implements IUsuario {
 
-		private String id;
-		private String nombre;
-		private String apellido;
-		private String correo;
-		private String contrasena;
-		private String rol;
+	private Integer id;
+	private String nombre;
+	private String apellido;
+	private String correo;
+	private String contrasena;
+	private String rol;
 
-		public Aficionado(String id, String nombre, String apellido, String correo,String contrasena, String rol) {
-			super();
-			this.id = id;
-			this.nombre = nombre;
-			this.apellido = apellido;
-			this.correo = correo;
-			this.contrasena = contrasena;
-			this.rol = rol;
-		}
+	public Aficionado(Integer id, String nombre, String apellido, String correo, String contrasena, String rol) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.correo = correo;
+		this.contrasena = contrasena;
+		this.rol = rol;
+	}
 
-		@Override
-		public String getId() {
-			return id;
-		}
+	@Override
+	public Integer getId() {
+		return id;
+	}
 
-		public void setId(String id) {
-			this.id = id;
-		}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-		@Override
+	@Override
 		public String getNombre() {
 			return nombre;
 		}

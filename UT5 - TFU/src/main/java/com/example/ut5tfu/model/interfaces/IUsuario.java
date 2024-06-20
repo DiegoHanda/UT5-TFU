@@ -1,10 +1,10 @@
-package com.example.ut5tfu.utils;
+package com.example.ut5tfu.model.interfaces;
 
 public interface IUsuario {
 
-		String getId();
+		Integer getId();
 
-		void setId(String id);
+		void setId(Integer id);
 
 		String getNombre();
 
