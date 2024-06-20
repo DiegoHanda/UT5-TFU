@@ -1,7 +1,7 @@
 package com.example.ut5tfu.web;
 
 import org.springframework.web.bind.annotation.*;
-import com.example.ut5tfu.business.itinerario.ItinerarioService;
+import com.example.ut5tfu.service.ItinerarioService;
 import com.example.ut5tfu.model.Itinerario;
 import java.util.List;
 @RestController

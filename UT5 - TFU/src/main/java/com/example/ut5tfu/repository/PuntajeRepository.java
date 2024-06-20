@@ -1,6 +1,6 @@
-package com.example.ut5tfu.persistence;
+package com.example.ut5tfu.repository;
 
-import com.example.ut5tfu.model.IPuntaje;
+import com.example.ut5tfu.model.interfaces.IPuntaje;
 
 public class PuntajeRepository extends Repository<IPuntaje, Integer> {
 

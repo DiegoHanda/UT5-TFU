@@ -1,8 +1,8 @@
-package com.example.ut5tfu.business.itinerario.impl;
+package com.example.ut5tfu.service.implementation;
 
-import com.example.ut5tfu.business.itinerario.ItinerarioService;
+import com.example.ut5tfu.service.ItinerarioService;
 import com.example.ut5tfu.model.Itinerario;
-import com.example.ut5tfu.persistence.ItinerarioRpository;
+import com.example.ut5tfu.repository.ItinerarioRpository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

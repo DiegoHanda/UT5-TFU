@@ -1,4 +1,4 @@
-package com.example.ut5tfu.business.itinerario;
+package com.example.ut5tfu.service;
 
 import com.example.ut5tfu.model.Itinerario;
 import java.util.List;

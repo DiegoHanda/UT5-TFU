@@ -1,10 +1,10 @@
-package com.example.ut5tfu.business.puntaje.impl;
+package com.example.ut5tfu.service.implementation;
 
-import com.example.ut5tfu.business.puntaje.PuntajeService;
-import com.example.ut5tfu.model.IPuntaje;
+import com.example.ut5tfu.service.PuntajeService;
+import com.example.ut5tfu.model.interfaces.IPuntaje;
 import com.example.ut5tfu.model.Encuentro;
 import com.example.ut5tfu.model.Deportista;
-import com.example.ut5tfu.persistence.PuntajeRepository;
+import com.example.ut5tfu.repository.PuntajeRepository;
 import com.example.ut5tfu.utils.ConcreteMediator;
 import com.example.ut5tfu.web.exception.NotFoundException;
 import org.springframework.stereotype.Service;

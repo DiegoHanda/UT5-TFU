@@ -2,7 +2,8 @@ package com.example.ut5tfu.model;
 
 import java.util.List;
 import java.util.HashMap;
-import com.example.ut5tfu.model.Juez;
+
+import com.example.ut5tfu.model.interfaces.IPuntaje;
 
 public class Encuentro {
 

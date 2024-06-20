@@ -1,5 +1,7 @@
 package com.example.ut5tfu.model;
 
+import com.example.ut5tfu.model.interfaces.IPuntaje;
+
 public class PuntajeKitesurf implements IPuntaje {
     private Integer id;
     private Integer puntajeTotal;

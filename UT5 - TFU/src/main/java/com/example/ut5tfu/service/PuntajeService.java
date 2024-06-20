@@ -1,8 +1,8 @@
-package com.example.ut5tfu.business.puntaje;
+package com.example.ut5tfu.service;
 
 import com.example.ut5tfu.model.Encuentro;
 import com.example.ut5tfu.model.Deportista;
-import com.example.ut5tfu.model.IPuntaje;
+import com.example.ut5tfu.model.interfaces.IPuntaje;
 import java.util.HashMap;
 import java.util.List;
 

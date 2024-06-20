@@ -1,8 +1,7 @@
-package com.example.ut5tfu.model;
+package com.example.ut5tfu.model.interfaces;
 
-import com.example.ut5tfu.persistence.PuntajeRepository;
-
-import java.lang.classfile.Interfaces;
+import com.example.ut5tfu.model.Deportista;
+import com.example.ut5tfu.repository.PuntajeRepository;
 
 public interface IPuntaje{
 

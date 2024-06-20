@@ -1,10 +1,9 @@
 package com.example.ut5tfu.web;
 
-import com.example.ut5tfu.business.puntaje.impl.PuntajeServiceImpl;
+import com.example.ut5tfu.service.implementation.PuntajeServiceImpl;
 import com.example.ut5tfu.model.Encuentro;
-import com.example.ut5tfu.model.Juez;
 import com.example.ut5tfu.model.Deportista;
-import com.example.ut5tfu.model.IPuntaje;
+import com.example.ut5tfu.model.interfaces.IPuntaje;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.HashMap;

@@ -1,6 +1,8 @@
 package com.example.ut5tfu.model;
 
-public class PuntajeAtletismo implements IPuntaje{
+import com.example.ut5tfu.model.interfaces.IPuntaje;
+
+public class PuntajeAtletismo implements IPuntaje {
 
     private Integer id;
     private Integer puntajeTotal;

@@ -1,7 +1,6 @@
 package com.example.ut5tfu.model;
 
-import com.example.ut5tfu.model.IPuntaje;
-import com.example.ut5tfu.model.Deportista;
+import com.example.ut5tfu.model.interfaces.IPuntaje;
 
 public class PuntajeSurf implements IPuntaje {
     private Integer id;

@@ -1,4 +1,4 @@
-package com.example.ut5tfu.persistence;
+package com.example.ut5tfu.repository;
 
 import com.example.ut5tfu.model.Estadistica;
 
@@ -21,4 +21,6 @@ public class EstadisticaRepository extends Repository<Estadistica, Integer>{
         this.entities.put(clase.getId(), clase);
          return super.save(clase);
     }
+
+
 }

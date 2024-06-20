@@ -1,4 +1,4 @@
-package com.example.ut5tfu.persistence;
+package com.example.ut5tfu.repository;
 
 import com.example.ut5tfu.model.Itinerario;
 

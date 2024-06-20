@@ -1,7 +1,7 @@
 package com.example.ut5tfu.utils;
 
 import com.example.ut5tfu.model.*;
-import com.example.ut5tfu.persistence.PuntajeRepository;
+import com.example.ut5tfu.repository.PuntajeRepository;
 
 
 import java.util.HashMap;

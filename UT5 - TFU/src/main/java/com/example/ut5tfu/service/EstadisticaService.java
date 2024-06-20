@@ -1,4 +1,4 @@
-package com.example.ut5tfu.business.estadistica;
+package com.example.ut5tfu.service;
 
 import com.example.ut5tfu.model.Estadistica;
 import java.util.List;

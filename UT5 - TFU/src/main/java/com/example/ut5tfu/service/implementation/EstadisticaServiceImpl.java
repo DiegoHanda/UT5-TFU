@@ -1,8 +1,7 @@
-package com.example.ut5tfu.business.estadistica.impl;
+package com.example.ut5tfu.service.implementation;
 
-import com.example.ut5tfu.business.estadistica.EstadisticaService;
-import com.example.ut5tfu.model.Itinerario;
-import com.example.ut5tfu.persistence.EstadisticaRepository;
+import com.example.ut5tfu.service.EstadisticaService;
+import com.example.ut5tfu.repository.EstadisticaRepository;
 import com.example.ut5tfu.model.Estadistica;
 import com.example.ut5tfu.web.exception.NotFoundException;
 

@@ -1,5 +1,7 @@
 package com.example.ut5tfu.model;
 
+import com.example.ut5tfu.model.interfaces.IPuntaje;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Estadistica {
