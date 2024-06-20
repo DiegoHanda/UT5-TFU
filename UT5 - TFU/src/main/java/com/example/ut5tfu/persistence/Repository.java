@@ -1,5 +1,7 @@
 package com.example.ut5tfu.persistence;
 
+import com.example.ut5tfu.model.Itinerario;
+
 import java.util.*;
 
 public abstract class Repository<T, I> {
@@ -21,5 +23,4 @@ public abstract class Repository<T, I> {
     public void delete(I id) {
         this.entities.remove(id);
     }
-
 }

@@ -1,6 +1,7 @@
 package com.example.ut5tfu.persistence;
 
 import com.example.ut5tfu.model.Encuentro;
+import com.example.ut5tfu.model.Itinerario;
 
 public class EncuentroRepository extends Repository<Encuentro, Integer> {
 
