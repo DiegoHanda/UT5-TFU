@@ -23,7 +23,7 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public IUsuario obtenerUsuarioPorId(Integer id) {
 		return this.adminRepository.getById(id)
-				.orElseThrow(() -> new NotFoundException("ENCUENTRO_NO_ENCONTRADO"));
+				.orElseThrow(() -> new NotFoundException("USUARIO_NO_ENCONTRADO"));
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class AdminServiceImpl implements AdminService {
 	@Override
 	public void eliminarUsuario(int id) {
 		this.adminRepository.getById(id)
-				.orElseThrow(() -> new NotFoundException("ENCUENTRO_NO_ENCONTRADO"));
+				.orElseThrow(() -> new NotFoundException("USUARIO"));
 		this.adminRepository.delete(id);
 	}
 }
