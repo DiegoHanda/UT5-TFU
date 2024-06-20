@@ -76,4 +76,11 @@ public class Deportista implements IUsuario {
 		this.rol = rol;
 	}
 
+	public Estadistica getEstadistica() {
+		return this.estadistica;
+	}
+
+	public void setEstadistica(Estadistica estadistica) {
+		this.estadistica = estadistica;
+	}
 }
