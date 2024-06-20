@@ -4,20 +4,20 @@ import java.util.List;
 
 public class Itinerario {
 
-    public String id;
+    public Integer id;
 
     public List<Encuentro> encuentros;
 
-    public Itinerario(String id, List<Encuentro> encuentros) {
+    public Itinerario(Integer id, List<Encuentro> encuentros) {
         this.id = id;
         this.encuentros = encuentros;
     }
 
-    public String getId() {
+    public Integer getId() {
         return this.id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

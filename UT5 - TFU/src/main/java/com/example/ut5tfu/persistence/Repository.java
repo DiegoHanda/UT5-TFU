@@ -23,4 +23,5 @@ public abstract class Repository<T, I> {
     public void delete(I id) {
         this.entities.remove(id);
     }
+
 }

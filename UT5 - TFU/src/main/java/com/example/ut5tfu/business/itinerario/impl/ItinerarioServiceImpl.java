@@ -18,12 +18,12 @@ public class ItinerarioServiceImpl implements ItinerarioService {
     }
 
     @Override
-    public void actualizarItinerario(String id, Itinerario itinerario) {
+    public void actualizarItinerario(Integer id, Itinerario itinerario) {
         itinerarioRepository.save(itinerario);
     }
 
     @Override
-    public void eliminarItinerario(String id) {
+    public void eliminarItinerario(Integer id) {
         itinerarioRepository.delete(id);
     }
 
@@ -32,7 +32,7 @@ public class ItinerarioServiceImpl implements ItinerarioService {
         return itinerarioRepository.getAll();
     }
 
-    public Optional<Itinerario> obtenerPorId(String id) {
+    public Optional<Itinerario> obtenerPorId(Integer id) {
         return itinerarioRepository.getById(id);
     }
 }

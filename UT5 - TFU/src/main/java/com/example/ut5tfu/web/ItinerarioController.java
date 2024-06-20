@@ -20,7 +20,7 @@ public class ItinerarioController {
     }
 
     @GetMapping("/{id}")
-    public Itinerario obtenerPorId(@PathVariable String id) {
+    public Itinerario obtenerPorId(@PathVariable Integer id) {
         return this.itinerarioService.obtenerPorId(id).orElse(null);
     }
 
@@ -30,13 +30,13 @@ public class ItinerarioController {
     }
 
     @PutMapping("/{id}")
-    public void actualizar(@PathVariable String id,
+    public void actualizar(@PathVariable Integer id,
                            @RequestBody Itinerario itinerario) {
         this.itinerarioService.actualizarItinerario(id, itinerario);
     }
 
     @DeleteMapping("/{id}")
-    public void eliminar(@PathVariable String id) {
+    public void eliminar(@PathVariable Integer id) {
         this.itinerarioService.eliminarItinerario(id);
     }
 

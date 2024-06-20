@@ -3,7 +3,7 @@ package com.example.ut5tfu.persistence;
 import com.example.ut5tfu.model.Itinerario;
 
 
-public class ItinerarioRpository extends Repository<Itinerario, String>{
+public class ItinerarioRpository extends Repository<Itinerario, Integer>{
 
         private static ItinerarioRpository instance;
 
@@ -24,7 +24,7 @@ public class ItinerarioRpository extends Repository<Itinerario, String>{
         }
 
         @Override
-        public void delete(String id) {
+        public void delete(Integer id) {
             this.entities.remove(id);
         }
 

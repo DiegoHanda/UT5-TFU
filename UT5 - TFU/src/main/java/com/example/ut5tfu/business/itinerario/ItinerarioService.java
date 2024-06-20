@@ -7,11 +7,11 @@ import java.util.Optional;
 public interface ItinerarioService {
 
     public void crearItinerario(Itinerario itinerario);
-    public void actualizarItinerario(String id, Itinerario itinerario);
-    public void eliminarItinerario(String id);
+    public void actualizarItinerario(Integer id, Itinerario itinerario);
+    public void eliminarItinerario(Integer id);
 
     public List<Itinerario> obtenerTodos();
-    public Optional<Itinerario> obtenerPorId(String id);
+    public Optional<Itinerario> obtenerPorId(Integer id);
 }
 
 
