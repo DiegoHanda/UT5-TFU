@@ -1,4 +1,4 @@
-package com.example.ut5tfu.business.encuentro.impl;
+package com.example.ut5tfu.persistence;
 
 public enum DeportesPermitidos {
     ATLETISMO,
@@ -8,5 +8,4 @@ public enum DeportesPermitidos {
     HALTEROFILIA,
     ESGRIMA,
     SURF;
-
 }

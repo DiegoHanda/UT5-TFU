@@ -1,4 +1,4 @@
-package com.example.ut5tfu.business.encuentro;
+package com.example.ut5tfu.service;
 
 import com.example.ut5tfu.model.Encuentro;
 

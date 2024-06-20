@@ -1,4 +1,4 @@
-package com.example.ut5tfu.persistence;
+package com.example.ut5tfu.repository;
 
 import com.example.ut5tfu.model.Encuentro;
 import com.example.ut5tfu.model.Itinerario;
@@ -10,7 +10,7 @@ public class EncuentroRepository extends Repository<Encuentro, Integer> {
     private EncuentroRepository(){
     }
 
-    public static EncuentroRepository getInstance() {
+    public static synchronized EncuentroRepository getInstance() {
         if (instance == null) {
             instance = new EncuentroRepository();
         }
