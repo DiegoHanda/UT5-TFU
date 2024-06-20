@@ -38,7 +38,7 @@ public class EncuentroController {
     }
 
     @DeleteMapping("/{id}")
-    public void eliminarEncuentro(@PathVariable int id) {
+    public void eliminar(@PathVariable int id) {
         this.encuentroService.eliminarEncuentro(id);
 }
 

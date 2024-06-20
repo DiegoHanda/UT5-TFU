@@ -1,8 +1,8 @@
 package com.example.ut5tfu.repository;
 
-import com.example.ut5tfu.model.Encuentro;
+import com.example.ut5tfu.model.Juez;
 
-public class JuezRepository extends Repository<Encuentro, Integer> {
+public class JuezRepository extends Repository<Juez, Integer> {
 
 	private static JuezRepository instance;
 
