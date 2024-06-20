@@ -2,14 +2,12 @@ package com.example.ut5tfu.utils;
 
 import com.example.ut5tfu.model.Deportista;
 import com.example.ut5tfu.model.Encuentro;
-import com.example.ut5tfu.repository.JuezRepository;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class ConcreteMediator implements IMediator {
 
-	private PuntajeFactoryImpl puntajeFactory;
+	private PuntajeFactory puntajeFactory;
 	private static ConcreteMediator cM;
 	private HashMap<Integer, Integer> encuentros;
 	private HashMap<String, Integer> caracteristicas;
