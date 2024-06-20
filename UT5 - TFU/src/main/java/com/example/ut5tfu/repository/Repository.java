@@ -1,5 +1,7 @@
 package com.example.ut5tfu.repository;
 
+import com.example.ut5tfu.model.Itinerario;
+
 import java.util.*;
 
 /**

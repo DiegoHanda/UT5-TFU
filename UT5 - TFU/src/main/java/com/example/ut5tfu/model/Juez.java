@@ -1,6 +1,7 @@
 package com.example.ut5tfu.model;
 
 import com.example.ut5tfu.utils.IMediator;
+import com.example.ut5tfu.utils.ConcreteMediator;
 import com.example.ut5tfu.model.interfaces.IUsuario;
 
 public class Juez implements IUsuario {
